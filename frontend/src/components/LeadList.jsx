@@ -18,12 +18,12 @@ function formatDate(value) {
 export default function LeadList({ leads = [], loading = false }) {
 
     return (
-        <div className="rounded-3xl border bg-white p-5 shadow-sm">
+        <div className="rounded-3xl border-2 border-blue-900 bg-white p-5 shadow-sm">
             <h2 className="text-lg font-semibold">Leads</h2>
             <p className="mt-1 text-sm text-neutral-600">Existing leads in the database</p>
 
-            <div className="mt-4 overflow-hidden rounded-xl border">
-                <div className="grid grid-cols-12 bg-neutral-50 px-3 py-2 text-xs font-semibold text-neutral-700">
+            <div className="mt-4 overflow-hidden rounded-xl border border-blue-900">
+                <div className="grid grid-cols-12 bg-blue-100 px-3 py-2 text-xs font-semibold text-neutral-700">
                     <div className="col-span-3">Name</div>
                     <div className="col-span-4">Email</div>
                     <div className="col-span-3">Status</div>

@@ -70,7 +70,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto max-w-6xl p-6">
-      <h1 className="mb-6 text-2xl font-semibold">Leads Management</h1>
+      <h1 className="mb-6 text-2xl font-semibold">Leads Management App</h1>
 
       {error ? (
         <div className="mb-4 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800">

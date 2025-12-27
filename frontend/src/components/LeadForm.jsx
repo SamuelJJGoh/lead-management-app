@@ -53,7 +53,7 @@ export default function LeadForm({ onCreate }) {
     };
 
     return (
-        <div className="rounded-3xl border bg-white p-5 shadow-sm">
+        <div className="rounded-3xl border-2 border-blue-900 bg-white p-5 shadow-sm">
             <h2 className="text-lg font-semibold">Add New Lead</h2>
             <p className="mt-1 text-sm text-neutral-600">Create a lead to start tracking progress.</p>
 
@@ -61,7 +61,7 @@ export default function LeadForm({ onCreate }) {
                 <div>
                     <label className="block text-sm font-medium text-neutral-800">Name</label>
                     <input 
-                        className="mt-1 w-full rounded-xl border px-3 py-2 text-sm focus:border-neutral-400"
+                        className="mt-1 w-full rounded-xl border border-blue-900 px-3 py-2 text-sm focus:border-neutral-400"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Jane Doe"
@@ -71,7 +71,7 @@ export default function LeadForm({ onCreate }) {
                 <div>
                     <label className="block text-sm font-medium text-neutral-800">Email</label>
                     <input 
-                        className="mt-1 w-full rounded-xl border px-3 py-2 text-sm focus:border-neutral-400"
+                        className="mt-1 w-full rounded-xl border border-blue-900 px-3 py-2 text-sm focus:border-neutral-400"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="janedoe@gmail.com"
@@ -82,7 +82,7 @@ export default function LeadForm({ onCreate }) {
                 <div>
                     <label className="block text-sm font-medium text-neutral-800">Status</label>
                     <select 
-                        className="mt-1 w-full rounded-xl border bg-white px-3 py-2 text-sm focus:border-neutral-400"
+                        className="mt-1 w-full rounded-xl border border-blue-900 bg-white px-3 py-2 text-sm focus:border-neutral-400"
                         value={status}
                         onChange={(e) => setStatus(e.target.value)}
                     >
@@ -103,7 +103,7 @@ export default function LeadForm({ onCreate }) {
                 <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-xl bg-neutral-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-neutral-800 disabled:cursor-not-allowed disabled:bg-neutral-300"
+                    className="w-full rounded-xl bg-orange-400 px-4 py-2.5 text-sm font-bold text-white hover:bg-orange-300 disabled:cursor-not-allowed disabled:bg-neutral-300"
                 >
                     {isSubmitting ? "Adding..." : "Add Lead"}
                 </button>
