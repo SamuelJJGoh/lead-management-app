@@ -23,9 +23,7 @@ const createLead = async (req, res) => {
             status
         });
 
-        res.status(201).json({
-            message: "Lead created successfully", lead
-        });
+        res.status(201).json(lead);
     } catch (error) {
         res.status(500).json({
             message: "Internal server error", error
