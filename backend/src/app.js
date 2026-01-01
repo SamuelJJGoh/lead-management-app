@@ -16,6 +16,6 @@ app.use(express.json());
 app.use(cors(corsOptions));
 
 app.use('/leads', leadRouter);
-// example : http://localhost:4000/leads/createLead
+// example : http://localhost:4000/leads
 
 export default app
